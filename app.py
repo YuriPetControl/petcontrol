@@ -5,7 +5,7 @@ import httpx
 import json
 
 # ==================== CONFIGURAÇÃO DA PÁGINA ====================
-# IMPORTANTE: st.set_page_config() deve ser a PRIMEIRA chamada do Streamlit
+# DEVE SER A PRIMEIRA LINHA EXECUTÁVEL DO STREAMLIT!
 st.set_page_config(
     page_title="PetControl",
     page_icon="🐾",
@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 # ==================== CONFIGURAÇÃO DO SUPABASE ====================
-# Buscar credenciais do st.secrets (seguro para produção)
+# Buscar credenciais do st.secrets (APÓS set_page_config)
 SUPABASE_URL = st.secrets["supabase"]["url"]
 SUPABASE_KEY = st.secrets["supabase"]["key"]
 SUPABASE_API_URL = f'{SUPABASE_URL}/rest/v1'
