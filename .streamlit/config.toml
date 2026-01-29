@@ -1,0 +1,33 @@
+# ==================== CONFIGURAÇÃO DE UI PROFISSIONAL ====================
+# Este arquivo configura a aparência do app no Streamlit Cloud
+
+[server]
+# Desabilitar watchdog para melhor performance em produção
+headless = true
+
+[browser]
+# Coletar métricas de uso (opcional)
+gatherUsageStats = false
+
+[theme]
+# Tema customizado (opcional - pode personalizar depois)
+primaryColor = "#1E88E5"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+
+[ui]
+# Esconder elementos desnecessários para clientes
+hideTopBar = true
+hideSidebarNav = false
+
+[runner]
+# Modo de atualização automática
+fastReruns = true
+
+[client]
+# Barra de ferramentas minimalista (esconde Fork, Deploy, etc)
+toolbarMode = "minimal"
+showErrorDetails = false
+showSidebarNavigation = true
