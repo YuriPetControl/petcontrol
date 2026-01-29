@@ -4,6 +4,8 @@ import locale
 import httpx
 import json
 
+# Atualização forçada da interface
+
 # ==================== CONFIGURAÇÃO DA PÁGINA ====================
 # DEVE SER A PRIMEIRA LINHA EXECUTÁVEL DO STREAMLIT!
 st.set_page_config(
